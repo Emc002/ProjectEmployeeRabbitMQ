@@ -24,7 +24,6 @@ exports.getOneEmployee =  async (ID) => {
 // Create Employee
 exports.createEmployee =  async (employee) => {
   try {
-    console.log(employee)
     const employeeData = await Employee.create(employee);
     if(employeeData){
       return employeeData;
