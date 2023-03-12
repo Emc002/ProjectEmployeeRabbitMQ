@@ -12,10 +12,10 @@ exports.listenForUserEvents = async () => {
       const data = JSON.parse(message.content.toString());
       switch (message.fields.routingKey) {
         case 'employee.created':
+          channel.ack(message);
           const employee = await crud.createEmployee(data);
           if(employee){
             console.log({message : "create Success", data : employee})
-            channel.ack(message);
           }
           break;
         case 'employee.updated':
