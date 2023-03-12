@@ -1,5 +1,5 @@
 const amqp = require('amqplib');
-const connectionString = 'amqp://localhost';
+const connectionString = 'amqp://host.docker.internal';
 const exchangeName = 'employee.events';
 
 exports.getChannel = async () => {

@@ -15,7 +15,7 @@ app.use('/api/project',project);
 app.use(notFound);
 app.use(errorHandleMiddleware);
 app.use(errorHandlerabbitMq);
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 3000
 
 const starting = async () =>{
   try{

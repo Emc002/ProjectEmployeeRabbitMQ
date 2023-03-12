@@ -1,5 +1,4 @@
 const errorHandleMiddleware = (err, req, res, next) => {
-  console.log(err,"check")
   if (err.name === 'ValidationError') {
     const errors = {};
     for (let field in err.errors) { 

@@ -1,4 +1,3 @@
-const amqp = require('amqplib');
 const rabbitmq = require('../config/rabbitMQ');
 const crud = require('../Service/CRUD')
 

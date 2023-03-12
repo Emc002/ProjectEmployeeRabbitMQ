@@ -1,5 +1,5 @@
 const errorHandleRabit = (err) => {
-  console.log(err)
+
   if (err.name === 'ValidationError') {
     const errors = {};
     for (let field in err.errors) { 
