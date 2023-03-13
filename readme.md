@@ -1,5 +1,9 @@
 # **SET UP DOCKER COMPOSE**
 
+1. Set your DB CONNECTION in .env file
+2. Run :
+   ****docker compose up*** *
+   in the terminal
 
 
 # **ROUTER LIST**
