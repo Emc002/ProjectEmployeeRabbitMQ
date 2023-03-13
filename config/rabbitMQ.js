@@ -1,10 +1,13 @@
 const amqp = require('amqplib');
-const connectionString = 'amqp://host.docker.internal';
+const RABBITMQ_HOST = process.env.RABBITMQ_HOST || 'localhost';
+const RABBITMQ_PORT = process.env.RABBITMQ_PORT || 5672;
+const RABBITMQ_USERNAME = process.env.RABBITMQ_USERNAME;
+const RABBITMQ_PASSWORD = process.env.RABBITMQ_PASSWORD;
 const exchangeName = 'employee.events';
 
 exports.getChannel = async () => {
   try {
-    const connection = await amqp.connect(connectionString);
+    const connection = await amqp.connect(`amqp://${RABBITMQ_USERNAME}:${RABBITMQ_PASSWORD}@${RABBITMQ_HOST}:${RABBITMQ_PORT}`);
     const channel = await connection.createChannel();
     await channel.assertExchange(exchangeName, 'topic', { durable: true });
     return channel;
