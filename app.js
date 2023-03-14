@@ -10,7 +10,7 @@ const userEvents = require('./Consume/employee');
 require('dotenv').config();
 userEvents.listenForUserEvents()
 app.use(express.json());
-app.use('/api/employee',employee);
+app.use('/api/employees',employee);
 app.use('/api/project',project);
 app.use(notFound);
 app.use(errorHandleMiddleware);

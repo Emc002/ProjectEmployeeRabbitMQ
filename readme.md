@@ -9,20 +9,20 @@
 
 ### * Get All Data
 
-    *http://localhost:3000/api/employee/All*
+    *http://localhost:3000/api/employees/All*
 
 ### * Get OneData
 
-    *http://localhost:3000/api/employee/One/**ID***
+    *http://localhost:3000/api/employees/One/**ID***
 
 ### * Create
 
-    *http://localhost:3000/api/employee/create*
+    *http://localhost:3000/api/employees/create*
 
 ### * Update
 
-    *http://localhost:3000/api/employee/update/**ID***
+    *http://localhost:3000/api/employees/update/**ID***
 
 ### * Delete
 
-    *http://localhost:3000/api/employee/delete/**ID***
+    *http://localhost:3000/api/employees/delete/**ID***
