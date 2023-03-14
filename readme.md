@@ -5,28 +5,23 @@
    ****docker compose up*** *
    in the terminal
 
-
 # **ROUTER LIST**
 
 ### * Get All Data
 
-    *http://localhost:3000/api/employee/getAll*
-
+    *http://localhost:3000/api/employee/All*
 
 ### * Get OneData
 
-    *http://localhost:3000/api/employee/getOne/**ID***
-
+    *http://localhost:3000/api/employee/One/**ID***
 
 ### * Create
 
     *http://localhost:3000/api/employee/create*
 
-
 ### * Update
 
     *http://localhost:3000/api/employee/update/**ID***
-
 
 ### * Delete
 
